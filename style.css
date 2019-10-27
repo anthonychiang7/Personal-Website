@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|BioRhyme:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:600&display=swap');
+
+
+/*************************************************************
+
+                          GENERAL
+
+**************************************************************/
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+
+  scroll-behavior: smooth;
+}
+
+h3 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 22px "Lato", sans-serif;
+  color: #111;
+}
+
+.bgimg-1, .bgimg-2{
+  position: relative;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("img/me.jpg");
+  opacity: 0.68;
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/uw_campus.jpg");
+  min-height: 38%;
+  max-height: 39%;
+  border: solid 15px white;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/*************************************************************
+
+                          NAV BAR
+
+**************************************************************/
+.container {
+  margin-top: 30px;
+  margin-right: 7%;
+  float: right;
+  width: auto;
+  line-height: 80%;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+}
+
+/* Navbar links */
+.topnav a {
+  border-radius: 15px;
+
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Arvo', serif;
+  font-size: 22px;
+}
+
+.link:hover {
+  background-color: white;
+  color: #0066ff;
+}
+
+/*************************************************************
+
+                        MAIN PAGE
+
+**************************************************************/
+.name {
+	width: 500px;
+	height: 95px;
+	background-color: none;
+  font-family: 'Arvo', serif;
+  /*font-family: 'BioRhyme', serif;
+  font-family: 'Hepta Slab', serif;*/
+  font-size: 52px;
+  color: #000000;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+
+  line-height: 95%;
+  opacity: 0.9;
+}
+
+#pre{
+  font-size: 28px;
+}
+
+#identity{
+  font-size: 25px;
+}
+
+.navigator{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  bottom:5%;
+  right:3%;
+
+  height: 55px;
+  z-index: 1;
+}
+
+#uparrow, #downarrow{
+  border-radius: 5px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+#uparrow{
+  background-image: url("img/arrowimgup.png");
+}
+
+#downarrow{
+  background-image: url("img/arrowimgdown.png");
+}
+
+/*************************************************************
+
+                        ABOUT ME PAGE
+
+**************************************************************/
+.about{
+  color: #777;
+  background-color: white;
+  padding: 12px 80px 40px ;
+  text-align: center;
+  min-height: 51%;
+  max-height: 51%;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white/*#ff0066*/;
+}
+
+.profile-pic {
+  height: 106%;
+  width: auto;
+}
+
+.information{
+  padding: 20px;
+  text-align: left;
+  background-color: rgba(220, 220, 220, 0.6);
+  border-radius: 12px;
+}
+
+.sub-section{
+  text-align: left;
+}
+
+.subtitle{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 16px "Lato", sans-serif;
+  color: #111;
+}
+
+.sub-subtitle{
+  letter-spacing: 1px;
+  font: 12px "Lato", sans-serif;
+  color: #111;
+}
+
+.line-height110{
+  line-height: 90%;
+  font-size: 16px;
+}
+
+/*************************************************************
+
+                        RESUME PAGE
+
+**************************************************************/
+.resume-container{
+
+  min-height: 100%;
+  color:#ddd;
+  /**background: radial-gradient(#666666, #191919);  */
+  background-color: #191919;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.resume{
+  background-color: rgba(220, 220, 220, 0.6);
+  padding: 50px;
+
+  width: 340px;
+  height: 435px;
+
+  border-radius: 10px;
+}
+
+.resume img{
+  width: 100%;
+  height: auto;
+}
+
+.white{
+  color: white;
+}
+
+/*************************************************************
+
+                        CONNECT PAGE
+
+**************************************************************/
+.connect-frame{
+  min-height: 100%;
+  background-color: #f8f8ff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-bottom: 15px;
+}
+
+.connect-container{
+  background-color: white;
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 20px;
+  padding-bottom: 10px;
+
+  padding-right: 20px;
+
+}
+
+.contact-me{
+  width: 440px;
+  height: 500px;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-photo{
+  border-radius: 17px;
+
+  background-image: url("img/hike.jpg");
+  opacity: 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 365px;
+  height: 420px;
+
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quick-contact{
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font: 17px "Lato", sans-serif;
+  color: #111;
+
+}
+
+.icon{
+  width: 70px;
+  height: 70px;
+}
+
+.icon2{
+  width: 70px;
+  height: auto;
+}
+
+.contact-title{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 22px "Lato", sans-serif;
+  color: #111;
+
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+#phone, #gmail, #placeholder{
+  display: flex;
+  align-items: center;
+}
+
+/*************************************************************
+
+                        FOOTER
+
+**************************************************************/
+.footer{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 25px 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.footer-left, .footer-right{
+  width: 40%;
+  height: 70%;
+  text-align: center;
+  line-height: 150%;
+  margin: auto;
+}
+
+.footer-center{
+  border-radius: 50%;
+  background-color: white;
+}
+
+.home-icon{
+  padding:5px;
+  width: 40px;
+  height: auto;
+}
+
+.footer-text{
+  letter-spacing: 1px;
+  font: 13px "Lato", sans-serif;
+  color: #111;
+}
+
+.footer-right a{
+  color: #f8f8ff;
+}
+
+/*************************************************************
+
+                          OTHER
+
+**************************************************************/
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+.hidden {
+  /* Used to override other display properties,
+   * .hidden should always take highest precedence */
+  display: none !important;
+}
