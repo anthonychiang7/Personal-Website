@@ -1,39 +1,34 @@
 
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I'm Anthony Chiang</title>
-    <link href="style.css" rel="stylesheet" />
+
     <link rel="shortcut icon" href="icons/logo.png" />
-    <script src="main.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--
-    ______________________________________________
+    <!-- ------------------------------
+                  HOME
+    --------------------------------- -->
 
-                      MAIN PAGE
-    ______________________________________________
-    -->
-      <a name="sectionHOME" id="panel0"> <!-- sectionHOME anchor -->
-      <div class="bgimg-1">
+      <a name="section0" id="panel0"></a>
+      <div class="home-bckgrd"></div>
 
-        <div class="container">
-          <nav class="topnav">
-            <a href="#sectionONE" class="link">About</a>
-            <a href="#sectionTWO" class="link">Resume</a>
-            <a href="#sectionTHREE" class="link">Connect</a>
-          </nav>
-        </div>
-
+      <div class="topnav">
+        <a href="#section1" class="link">OVERVIEW</a>
+        <a href="#section2" class="link">PROJECTS</a>
+        <a href="#section3" class="link">GALLERY</a>
+        <a href="#section4" class="link">CONNECT</a>
       </div>
 
-      <div class="name">
+      <div class="intro">
         <center id="pre">Hi, I'm </center>
         <center>Anthony Chiang</center>
-        <center id="identity">| Software Engineer |</center> <!-- this should be our dynamic title -->
+        <center id="identity">|Software Engineer|</center> <!-- this should be our dynamic title -->
       </div>
 
       <div class="navigator">
@@ -41,163 +36,187 @@
         <div id="downarrow"></div>
       </div>
 
-
-    <!--
-    ______________________________________________
-
-                      SECTION ONE
-    ______________________________________________
-    -->
-    <a name="sectionONE" id="panel1"> <!-- SECTION ONE ANCHOR -->
-    <div class="about">
-
-      <h3>About Me</h3>
-      <span class="line-height110">I'm a third-year student studying informatics at the University of Washington.</span>
-      <br><br>
-
-      <div class="about-container">
-
-        <div class="image-cropper">
-          <img src="img/portrait.jpg" alt="my portrait" class="profile-pic">
-        </div>
-
-        <div class="information">
-          <span class="subtitle">Education</span>
-          <div class="sub-section">
-            <span class="sub-subtitle">School: </span>
-            University of Washington<br>
-            <span class="sub-subtitle">Major: </span>
-            Informatics - Information Assurance and Cybersecurity<br>
-            <span class="sub-subtitle">Graduation: </span>
-            Fall 2020
-            <br>
-          </div>
-          <br>
-          <span class="subtitle">Skills</span>
-          <div class="sub-section">
-            <span class="sub-subtitle">Languages: </span>
-            Java, SQL, Ruby, HTML/CSS, JavaScript, Racket<br>
-            <span class="sub-subtitle">Tools: </span>
-            GitHub, Microsoft Azure, AWS
-            <br>
-          </div>
-        </div>
-
+    <!-- ------------------------------
+                  OVERVIEW
+    --------------------------------- -->
+    <a name="section1" id="panel1">
+    <section class="overview">
+      <div class="overview-subsection">
+        <h2> about </h2>
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate.
+        </p>
       </div>
 
-    </div>
-    <div class="bgimg-2"></div>
+      <div class="overview-subsection">
+        <h2> education </h2>
+        <p> 
+          <span class="school-name">University of Washington </span> <br><br>
+          <span class="education-subsection">Major:</span> 
+          Informatics - Software Dev Custom Track<br>
+          <span class="education-subsection"3>Graduation:</span> 
+          December 2020 <br>
+          <span class="education-subsection">Coursework:</span>  
+          Data Structures and Algorithms; 
+          Databases Design and Management; 
+          Client-Side Web Development; 
+          Programming Languages and Implementations;
+          Web Programming;
+        </p>
+      </div>
 
+      <div class="overview-subsection">
+        <h2> experience </h2>
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate. <br><br>
 
-    <!--
-    ______________________________________________
+          <a href="#" id="resume-button"> Download Resume </a>
+        </p>
+      </div>
+    </section>
 
-                      SECTION TWO
-    ______________________________________________
-    -->
-    <a name="sectionTWO" id="panel2"> <!-- SECTION TWO ANCHOR -->
-    <div class="resume-container">
-      <h3><span class="white">My Resume</span></h3>
-        <div class="resume">
-          <a href="img/Resume(pdf).pdf" target="_blank">
-            <img src="img/resume.jpg" alt="resume">
-          </a>
+    <!-- ------------------------------
+                  PROJECT
+    --------------------------------- -->
+    <a name="section2" id="panel2">
+    <section class="project">
+      <div class="project-subsection">
+        <h1> PROJECTS </h1>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------
+                  GALLERY
+    --------------------------------- -->
+    <a name="section3" id="panel3">
+    <section class="gallery">
+      <h1> GALLERY </h1>
+      <div class="scene">
+          <div class="carousel">
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell"></div>
+            <div class="carousel__cell">10</div>
+            <div class="carousel__cell">11</div>
+            <div class="carousel__cell">12</div>
+            <div class="carousel__cell">13</div>
+            <div class="carousel__cell">14</div>
+            <div class="carousel__cell">15</div>
+          </div>
         </div>
-    </div>
+        
+        <div class="carousel-options">
+          <p>
+            <label>
+              Cells
+              <input class="cells-range" type="range" min="3" max="15" value="9" />
+            </label>
+          </p>
+          <p>
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+          </p>
+          
+          <p class="hidden"> 
+            Orientation:
+            <label>
+              <input type="radio" name="orientation" value="horizontal" checked />
+              horizontal
+            </label>
+            <label>
+              <input type="radio" name="orientation" value="vertical" />
+              vertical
+            </label>
+          </p>
+          
+        </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-    <!--
-    ______________________________________________
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
 
-                      SECTION THREE
-    ______________________________________________
-    -->
-    <a name="sectionTHREE" id="panel3"> <!-- SECTION THREE ANCHOR -->
-    <div class="connect-frame">
-      <div class="connect-container">
-        <div class="contact-me">
-          <span class="contact-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Contact Me<br>
+          <!-- The left Button -->
+          <span class="prevImg">
+            <i class="fa fa-angle-left fa-2x"></i>
           </span>
-          <div class="quick-contact">
-            <br>
-            <div id="phone">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <img src="icons/phone.png" alt="mobile phone icon" class="icon2">
-              &nbsp;&nbsp;408-876-0515
-            </div>
-            <br>
-            <div id="placeholder">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <img src="icons/placeholder.png" alt="placeholder icon" class="icon2">
-              &nbsp;&nbsp;Seattle WA / Cupertino CA
-            </div>
-            <br>
-            <div id="gmail">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <img src="icons/gmail.png" alt="gmail icon" class="icon2">
-              &nbsp;&nbsp;anthonychiang7@gmail.com
-            </div>
-            <br>
-          </div>
-          <div class="social-media">
 
-            <a href="https://www.linkedin.com/in/anthonychiang/" target="_blank">
-              <img src="icons/linkedin.png" alt="linkedin icon" class="icon">
-            </a>
+          <!-- The right Button -->
+          <span class="nextImg">
+            <i class="fa fa-angle-right fa-2x"></i>
+          </span>
 
-            <a href="https://www.facebook.com/tjoyhohoant" target="_blank">
-              <img src="icons/facebook.png" alt="facebook icon" class="icon">
-            </a>
 
-            <a href="https://www.instagram.com/birdkawkaw/" target="_blank">
-              <img src="icons/instagram.png" alt="instagram icon" class="icon">
-            </a>&nbsp;<!--
-            <img src="icons/linkedin.png" alt="linkedin icon" class="icon">
-            <img src="icons/facebook.png" alt="facebook icon" class="icon">
-            <img src="icons/instagram.png" alt="instagram icon" class="icon">-->
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
 
-            <!-- anchor tag messed up spacing. Needed to add &nbsp; to fix -->
-          </div>
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+
         </div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <div>
-          <div class="contact-photo"> </div>
+    </section>
+
+    <!-- ------------------------------
+                  CONTACT
+    --------------------------------- -->
+    <a name="section4" id="panel4">
+    <section class="contact">
+      
+    </section>
+
+    <!-- ------------------------------
+                  FOOTER
+    --------------------------------- -->
+    <footer>
+      <a name="section4" id="panel4">
+      <div class="footer-container">
+        <span> connect with me </span>
+        <div class="icons">
+          <a href="https://linkedin.com/in/anthonychiang/" id="icon1" target="_blank">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/tjoyhohoant" id="icon2" target="_blank">
+            <i class="fa fa-facebook-f fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/birdkawkaw/" id="icon3" target="_blank">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://github.com/anthonychiang7" id="icon5" target="_blank">
+            <i class="fa fa-github-alt fa-2x"></i>
+          </a>
+          <a href="mailto: anthonychiang7@gmail.com" id="icon4" target="_blank">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
+        </div> 
+        <div class="footer-nav">
+          <a href="#section0" class="link">HOME</a>
+          <a href="#section1" class="link">OVERVIEW</a>
+          <a href="#section2" class="link">PROJECTS</a>
+          <a href="#section3" class="link">GALLERY</a>
         </div>
-      </div>
-    </div>
-
-
-
-    <!--
-    ______________________________________________
-
-                      FOOTER
-    ______________________________________________
-    -->
-
-    <footer class="footer">
-      <div class="footer-left">
-        Website built and designed by Anthony Chiang.<br>
-        Last modified September 13 2019.
-      </div>
-
-      <div class="footer-center">
-        <a href="#sectionHOME">
-          <img src="icons/home.png" alt="home icon" class="home-icon">
-        </a>
-      </div>
-
-      <div class="footer-right">
-        <div>
-          Icons made by
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
-          <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a>
-        </div>
+        <div class="copyright">
+          &copy;2019 Anthony Chiang. Last updated October 28
+        </div>  
       </div>
     </footer>
-    <a name="sectionFour" id="panel4"> <!-- sectionFour (footer) anchor -->
 
+    <script src="main.js"></script>
   </body>
 
 </html>
