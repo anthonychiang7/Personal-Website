@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,600,700,800,900&display=swap');
+
 /*************************************************************
 
                           GENERAL
@@ -30,7 +31,7 @@ h1{
   text-align: center;
 }
 h2 {
-  font-weight: 200
+  font-weight: 200;
 }
 h3{
 
@@ -195,6 +196,39 @@ h3{
 	}
 }
 
+/*************************************************************
+
+                   BOUNCING ANGLE DOWN
+
+**************************************************************/
+
+.arrow{
+  position: relative;
+  bottom: 3.7rem;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+
+  color: #292c2f;
+}
+
+.bounce {
+  animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
 
 /*************************************************************
 
@@ -221,7 +255,7 @@ h3{
   margin-right: 50px;
   width: 150px;
   text-align: right;
-  font-weight: 200;
+  font-weight: 300;
 }
 .overview-content{
   font-weight: 300;
@@ -312,7 +346,7 @@ li{
 * { box-sizing: border-box; }
 
 .scene {
-  border: 1px solid #CCC;
+  border: 1px solid white;
   position: relative;
   width: 210px;
   height: 140px;
@@ -335,7 +369,7 @@ li{
   height: 120px;
   left: 10px;
   top: 10px;
-  border: 1px solid grey;
+  border: 5px solid white;
   line-height: 116px;
   font-size: 80px;
   font-weight: bold;

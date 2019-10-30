@@ -31,10 +31,7 @@
     var gallery_height = document.getElementById("gallery").clientHeight;
     var footer_height = document.querySelector("footer").clientHeight;
 
-    console.log(overview_height);
-    console.log(project_height);
-    console.log(gallery_height);
-    console.log(footer_height);
+
 
     if(offset < height/2) {
       panel = 0; //main page
@@ -169,8 +166,16 @@
   // Start the typing effect on load
   _INTERVAL_VAL = setInterval(Type, 100);
 
+   /*********************************************
+    
+                    ANGLE DOWN
 
-
+   ********************************************/
+  var down_arrow = document.querySelector(".arrow");
+  down_arrow.addEventListener("click", function(){
+    panel = 1;
+    window.location.hash = "panel1";
+  });
 
 
   /*********************************************
@@ -290,15 +295,37 @@
   //next img
   var nextImg = document.getElementsByClassName("nextImg")[0];
   nextImg.onclick = function() {
-    if (currentImg == cellCount - 1) currentImg = -1;
-    modalImg.src = gallery_img[++currentImg];
+    getRightImage();
   }
   //prev img
   var prevImg = document.getElementsByClassName("prevImg")[0];
   prevImg.onclick = function() {
+    getLeftImage();
+  }
+
+  function getRightImage(){
+    if (currentImg == cellCount - 1) currentImg = -1;
+    modalImg.src = gallery_img[++currentImg];
+  }
+  function getLeftImage(){
     if (currentImg == 0) currentImg = cellCount;
     modalImg.src = gallery_img[--currentImg];
   }
+
+  document.addEventListener("keydown", function(e) {
+    switch(e.which) {
+        case 37: // left
+            getLeftImage();
+        break;
+
+       case 39: // right
+            getRightImage();
+       break;
+
+       default: return; 
+    }
+    e.preventDefault(); 
+  });
 
   for ( var i=0; i < cells.length; i++ ) {
     var cell = cells[i];
