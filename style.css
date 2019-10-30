@@ -318,16 +318,45 @@ li{
                           PROJECT
 
 **************************************************************/
-#project{
+#project {
   background-color: whitesmoke;
   min-height: 400px;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .project-subsection {
   text-align: center;
 }
 
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.set{
+  background-image: url("img/set.png");
+} 
+.pokedex{
+  background-image: url("img/pika.png");
+}
+.set, .pokedex{
+  width: 330px;
+  height:220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 1px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.game_name{
+  font-size: 25px;
+  color: #292c2f;
+}
 
 /*************************************************************
 
@@ -380,21 +409,21 @@ li{
   cursor: pointer;
 }
 
-.carousel__cell:nth-child(1) { background-image: url("img0.jpeg"); }
-.carousel__cell:nth-child(2) { background-image: url("img1.jpeg"); }
-.carousel__cell:nth-child(3) { background-image: url("img2.jpeg"); }
-.carousel__cell:nth-child(4) { background-image: url("img3.jpeg"); }
-.carousel__cell:nth-child(5) { background-image: url("img4.jpeg"); }
-.carousel__cell:nth-child(6) { background-image: url("img5.jpeg"); }
-.carousel__cell:nth-child(7) { background-image: url("img6.jpeg"); }
-.carousel__cell:nth-child(8) { background-image: url("img7.jpeg"); }
-.carousel__cell:nth-child(9) { background-image: url("img8.jpeg"); }
-.carousel__cell:nth-child(10) { background-image: url("img9.jpeg"); }
-.carousel__cell:nth-child(11) { background-image: url("img9.jpeg"); }
-.carousel__cell:nth-child(12) { background-image: url("img9.jpeg"); }
-.carousel__cell:nth-child(13) { background-image: url("img9.jpeg"); }
-.carousel__cell:nth-child(14) { background-image: url("img9.jpeg"); }
-.carousel__cell:nth-child(15) { background-image: url("img9.jpeg"); }
+.carousel__cell:nth-child(1) { background-image: url("gallery_img/img0.jpeg"); }
+.carousel__cell:nth-child(2) { background-image: url("gallery_img/img1.jpeg"); }
+.carousel__cell:nth-child(3) { background-image: url("gallery_img/img2.jpeg"); }
+.carousel__cell:nth-child(4) { background-image: url("gallery_img/img3.jpeg"); }
+.carousel__cell:nth-child(5) { background-image: url("gallery_img/img4.jpeg"); }
+.carousel__cell:nth-child(6) { background-image: url("gallery_img/img5.jpeg"); }
+.carousel__cell:nth-child(7) { background-image: url("gallery_img/img6.jpeg"); }
+.carousel__cell:nth-child(8) { background-image: url("gallery_img/img7.jpeg"); }
+.carousel__cell:nth-child(9) { background-image: url("gallery_img/img8.jpeg"); }
+.carousel__cell:nth-child(10) { background-image: url("gallery_img/img9.jpeg"); }
+.carousel__cell:nth-child(11) { background-image: url("gallery_img/img9.jpeg"); }
+.carousel__cell:nth-child(12) { background-image: url("gallery_img/img9.jpeg"); }
+.carousel__cell:nth-child(13) { background-image: url("gallery_img/img9.jpeg"); }
+.carousel__cell:nth-child(14) { background-image: url("gallery_img/img9.jpeg"); }
+.carousel__cell:nth-child(15) { background-image: url("gallery_img/img9.jpeg"); }
 
 
 .gallery, .carousel__cell:nth-child(9n+1), .carousel__cell:nth-child(9n+2), .carousel__cell:nth-child(9n+3), 

@@ -185,12 +185,12 @@
    ********************************************/
 
   var currentImg = 0;
-  var gallery_img = ["img0.jpeg", "img1.jpeg", "img2.jpeg", 
-                     "img3.jpeg", "img4.jpeg", "img5.jpeg",
-                     "img6.jpeg", "img7.jpeg", "img8.jpeg",
-                     "img9.jpeg", "img10.jpeg", "img11.jpeg",
-                     "img12.jpeg", "img13.jpeg", "img14.jpeg", 
-                     "img15.jpeg"];
+  var gallery_img = ["gallery_img/img0.jpeg", "gallery_img/img1.jpeg", "gallery_img/img2.jpeg", 
+                     "gallery_img/img3.jpeg", "gallery_img/img4.jpeg", "gallery_img/img5.jpeg",
+                     "gallery_img/img6.jpeg", "gallery_img/img7.jpeg", "gallery_img/img8.jpeg",
+                     "gallery_img/img9.jpeg", "gallery_img/img10.jpeg", "gallery_img/img11.jpeg",
+                     "gallery_img/img12.jpeg", "gallery_img/img13.jpeg", "gallery_img/img14.jpeg", 
+                     "gallery_img/img15.jpeg"];
   
   var carousel = document.querySelector('.carousel');
   var cells = carousel.querySelectorAll('.carousel__cell');
