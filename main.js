@@ -23,18 +23,28 @@
   }
 
   function scrollAction(){
-    let offset = window.pageYOffset;
-    let height = window.innerHeight;
+    var offset = window.pageYOffset;
+    var height = window.innerHeight;
+
+    var overview_height = document.getElementById("overview").clientHeight;
+    var project_height = document.getElementById("project").clientHeight;
+    var gallery_height = document.getElementById("gallery").clientHeight;
+    var footer_height = document.querySelector("footer").clientHeight;
+
+    console.log(overview_height);
+    console.log(project_height);
+    console.log(gallery_height);
+    console.log(footer_height);
 
     if(offset < height/2) {
       panel = 0; //main page
-    }else if (offset >= height / 2 && offset < height * 1.5){
-      panel = 1; //about
-    }else if (offset >= height * 1.5 && offset < height * 2.5) {
-      panel = 2; //resume
-    }else if (offset >= height * 2.5 && offset < height * 3.5) {
-      panel = 3; //connect
-    }else if (offset >= height * 3.5 && offset < height * 4.5) {
+    }else if (offset >= height / 2 && offset < 0.5 * height + overview_height){
+      panel = 1; //overview
+    }else if (offset >= 0.5 * height + overview_height && offset < 0.5 * height + overview_height + project_height) {
+      panel = 2; //project
+    }else if (offset >= 0.5 * height + overview_height + project_height && offset < 0.5 * height + overview_height + project_height + gallery_height) {
+      panel = 3; //gallery
+    }else if (offset >= 0.5 * height + overview_height + project_height + gallery_height < 0.5 * height + overview_height + project_height + gallery_height + footer_height) {
       panel = 4; //footer
     }
   }
@@ -65,7 +75,7 @@
         if(panel === 0){
           panel = 1;
           window.location.hash = "panel1";
-        }else if (panel === 1){
+       }else if (panel === 1){
           panel = 2;
           window.location.hash = "panel2";
         }else if (panel === 2){
@@ -77,6 +87,90 @@
         }
     });
   }
+
+
+  /*********************************************
+    
+                  TYPING ANIMATION
+
+   ********************************************/
+  // List of sentences
+  var _CONTENT = [ 
+    "Full Stack Software Engineer", 
+    "Programmer", 
+    "Innovator",
+    "Student",
+    "Dreamer",
+    "Maker", 
+    "Achiever"
+  ];
+
+  // Current sentence being processed
+  var _PART = 0;
+
+  // Character number of the current sentence being processed 
+  var _PART_INDEX = 0;
+
+  // Holds the handle returned from setInterval
+  var _INTERVAL_VAL;
+
+  // Element that holds the text
+  var _ELEMENT = document.querySelector("#text");
+
+  // Cursor element 
+  var _CURSOR = document.querySelector("#cursor");
+
+  // Implements typing effect
+  function Type() { 
+    // Get substring with 1 characater added
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX++;
+
+    // If full sentence has been displayed then start to delete the sentence after some time
+    if(text === _CONTENT[_PART]) {
+      // Hide the cursor
+      _CURSOR.style.display = 'none';
+
+      clearInterval(_INTERVAL_VAL);
+      setTimeout(function() {
+        _INTERVAL_VAL = setInterval(Delete, 50);
+      }, 1000);
+    }
+  }
+
+  // Implements deleting effect
+  function Delete() {
+    // Get substring with 1 characater deleted
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX--;
+
+    // If sentence has been deleted then start to display the next sentence
+    if(text === '') {
+      clearInterval(_INTERVAL_VAL);
+
+      // If current sentence was last then display the first one, else move to the next
+      if(_PART == (_CONTENT.length - 1))
+        _PART = 0;
+      else
+        _PART++;
+      
+      _PART_INDEX = 0;
+
+      // Start to display the next sentence after some time
+      setTimeout(function() {
+        _CURSOR.style.display = 'inline-block';
+        _INTERVAL_VAL = setInterval(Type, 100);
+      }, 200);
+    }
+  }
+
+  // Start the typing effect on load
+  _INTERVAL_VAL = setInterval(Type, 100);
+
+
+
 
 
   /*********************************************

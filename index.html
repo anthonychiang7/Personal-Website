@@ -19,16 +19,19 @@
       <div class="home-bckgrd"></div>
 
       <div class="topnav">
-        <a href="#section1" class="link">OVERVIEW</a>
-        <a href="#section2" class="link">PROJECTS</a>
-        <a href="#section3" class="link">GALLERY</a>
-        <a href="#section4" class="link">CONNECT</a>
+        <a href="#section1" class="link">overview</a>
+        <a href="#section2" class="link">projects</a>
+        <a href="#section3" class="link">gallery</a>
+        <a href="#section4" class="link">connect</a>
       </div>
 
       <div class="intro">
         <center id="pre">Hi, I'm </center>
-        <center>Anthony Chiang</center>
-        <center id="identity">|Software Engineer|</center> <!-- this should be our dynamic title -->
+        <center id="my-name">Anthony Chiang</center>
+        <div id="container">
+          <!-- <i class="fa fa-angle-right fa-xs" style="color: #292c2f;"></i> -->
+          <div id="text"></div><div id="cursor"></div>
+        </div>
       </div>
 
       <div class="navigator">
@@ -39,55 +42,99 @@
     <!-- ------------------------------
                   OVERVIEW
     --------------------------------- -->
-    <a name="section1" id="panel1">
-    <section class="overview">
+    <a name="section1" id="panel1"></a>
+    <section id="overview">
+
+      <h1> OVERVIEW </h1><br>
+
       <div class="overview-subsection">
         <h2> about </h2>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate.
-        </p>
+        <div class="overview-content">
+          <p> 
+            I'm a kid turning into an adult. <br>
+            I'm on a steep learning curve, shifting from audience to player. <br>
+            I knock my keyboard to put smiles on people around me. <br>
+            No matter where you are, I believe in life-long learning. <br>
+            Life is full of wonders, my motto is to go with the flow. <br>
+          </p><br>
+          <hr>
+        </div>
       </div>
 
       <div class="overview-subsection">
         <h2> education </h2>
-        <p> 
-          <span class="school-name">University of Washington </span> <br><br>
-          <span class="education-subsection">Major:</span> 
-          Informatics - Software Dev Custom Track<br>
-          <span class="education-subsection"3>Graduation:</span> 
-          December 2020 <br>
-          <span class="education-subsection">Coursework:</span>  
-          Data Structures and Algorithms; 
-          Databases Design and Management; 
-          Client-Side Web Development; 
-          Programming Languages and Implementations;
-          Web Programming;
-        </p>
+        <div class="overview-content">
+          <p> 
+            <span class="education-subsection">
+              <span class="subsection-school">University of Washington, Seattle<br></span>
+            </span>
+            
+            <span class="education-subsection">
+              <span class="subsection-name">Major:</span> 
+              <span class="subsection-content">Informatics - Software Development Custom Track<br></span>
+            </span>
+            
+            <span class="education-subsection">
+              <span class="subsection-name">Graduation:</span>
+              <span class="subsection-content"> December 2020 <br></span>
+            </span>        
+
+          </p><br>
+          <hr>
+        </div>
       </div>
 
       <div class="overview-subsection">
         <h2> experience </h2>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate. <br><br>
+        <div class="overview-content">
+          <p> 
+            <span class="experience">
+              <span class="company magenta">T-Mobile</span>
+              <span class="role-title">
+                | Software Engineer Intern<br><span style="font-size: 15px">October 2019 - Present </span>
+              </span><br>
+              At T-Mobile, I build and deploy full stack application from the ground up. 
+              <br><br>
 
-          <a href="#" id="resume-button"> Download Resume </a>
-        </p>
+              <span class="experience-500">Project RAMII</span> | <span class="skills">GraphQL, TypeScript, NestJS, Angular</span><br>
+              <ul>
+                <li>I'm building a unifying authorization portal for all company applications. </li>
+                <li>Company applications can call the API to validate whether a user
+                    has a specific authorization level, and if not they can request access which 
+                    then triggers a notification to the application adminstrator via Slack.</li>
+                <li>The API uses GraphQL to stitch user's metadata with their unique slack ID 
+                    and provide only exactly what the client asks for on API calls.</li>
+              </ul>
+              
+
+              <span class="experience-500">Project Incubator</span> | <span class="skills">JavaScript, REACT, Angular, PostgreSQL</span><br>
+              <ul>
+                <li>
+                  Incubator is a  web application that functions much like excel - it allows users
+                  to maintain .csv files in a shared space where teammates can make updates at real time.</li>
+                <li>
+                  Data is then published to Azure data warehourse where it 
+                  can be accessed for reporting and analtic purposes.
+                </li>
+                <li>
+                  The application is intended to "incubate" their business process before 
+                  a custom solution is needed. 
+                </li>
+              </ul>
+            </span>
+        
+            <br>
+            <a href="Resume.pdf" id="resume-button" target="_blank"> Download Resume </a>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- ------------------------------
                   PROJECT
     --------------------------------- -->
-    <a name="section2" id="panel2">
-    <section class="project">
+    <a name="section2" id="panel2"></a>
+    <section id="project">
       <div class="project-subsection">
         <h1> PROJECTS </h1>
 
@@ -97,8 +144,8 @@
     <!-- ------------------------------
                   GALLERY
     --------------------------------- -->
-    <a name="section3" id="panel3">
-    <section class="gallery">
+    <a name="section3" id="panel3"></a>
+    <section id="gallery">
       <h1> GALLERY </h1>
       <div class="scene">
           <div class="carousel">
@@ -111,7 +158,7 @@
             <div class="carousel__cell"></div>
             <div class="carousel__cell"></div>
             <div class="carousel__cell"></div>
-            <div class="carousel__cell">10</div>
+            <div class="carousel__cell"></div>
             <div class="carousel__cell">11</div>
             <div class="carousel__cell">12</div>
             <div class="carousel__cell">13</div>
@@ -123,12 +170,12 @@
         <div class="carousel-options">
           <p>
             <label>
-              Cells
+              Size
               <input class="cells-range" type="range" min="3" max="15" value="9" />
             </label>
           </p>
           <p>
-            <button class="previous-button">Previous</button>
+            <button class="previous-button">Prev</button>
             <button class="next-button">Next</button>
           </p>
           
@@ -184,7 +231,7 @@
                   FOOTER
     --------------------------------- -->
     <footer>
-      <a name="section4" id="panel4">
+      <a name="section4" id="panel4"></a>
       <div class="footer-container">
         <span> connect with me </span>
         <div class="icons">
