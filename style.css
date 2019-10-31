@@ -238,32 +238,35 @@ h3{
 #overview {
   padding-top: 50px;
   overflow-x: hidden;
+  padding-bottom: 20px; 
+}
 
+.all-overviews{
+  margin: auto;
+  position: relative;
+  width: 60%;
+  left: -70px;
 }
 .overview-subsection {
-  position: relative;
-  width: 100%;
-  left: 18%;
-  padding-bottom: 20px;
-  line-height: 1.5;
-
   display: flex;
   flex-direction: row;
 }
 .overview-subsection h2{
-  float: right;
-  margin-right: 50px;
-  width: 150px;
-  text-align: right;
+  position: relative;
+  min-width: 30%;
   font-weight: 300;
+  text-align: end;
 }
 .overview-content{
-  font-weight: 300;
   padding-top: 10px;
+  font-weight: 300;
   font-size: 16px;
 
-  width: 510px;
-
+  position: relative;
+  min-width: 70%;
+  max-width: 70%;
+  padding-left: 40px; 
+  word-wrap: break-word;
 }
 
 
@@ -340,10 +343,13 @@ li{
 .set{
   background-image: url("img/set.png");
 } 
+.react_weather{
+  background-image: url("img/react_weather.png");
+}
 .pokedex{
   background-image: url("img/pika.png");
 }
-.set, .pokedex{
+.set, .pokedex, .react_weather{
   width: 330px;
   height:220px;
   background-position: center;
@@ -354,7 +360,7 @@ li{
   cursor: pointer;
 }
 .game_name{
-  font-size: 25px;
+  font-size: 22px;
   color: #292c2f;
 }
 
